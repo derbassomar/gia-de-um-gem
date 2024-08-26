@@ -1,0 +1,334 @@
+:root {
+    --amarelo: #ffc73a;
+    --vermelho: #f8443e;
+    --verde: #00ff0a;
+    --azul: #00e0ff;
+    --preto: #000000;
+    --branco: #ffffff;
+  }
+
+  *{
+    margin: 0;
+    padding: 0;
+  }
+body{
+  font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+img[ alt=logo]{
+    width: 48px;
+  }
+  header{
+    background-image: url(imagens-geime/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: 2000px;
+    height: 350px;
+  }
+  .head,.navegar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .navegar{
+    gap: 3em;
+    z-index: 2;
+  }
+  .head{
+    background-color: var(--azul);
+    justify-content: space-between;
+    padding: 0 10%;
+    height: 4.5em;
+    box-shadow: 1px 1px 4px var(--cor-preta);
+    }
+
+.menu{
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+  }
+
+.menu:hover{
+    background-color: var(--verde);
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+a:active{
+ transform: translateY(-1px);
+}
+
+img[ alt=Among],img[alt=Surfers],img[alt=GTA],img[alt=FIFA]{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover
+}
+
+.circulo{
+  text-align: center;
+  justify-content: space-between;
+  border-radius: 50px;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+  
+}
+.foto-circulo:hover{
+  width: 15%;
+  border:6px solid var(--vermelho);
+}
+
+.conteiner-geime{
+  position: absolute;
+  top: 80%;
+  padding: 10px;
+}
+.info{
+   display: flex;
+    gap: 20px;
+   padding: 20px;
+   text-wrap: balance;
+   
+   
+}
+.coluna-esquerda{
+  border: 1px solid var(--branco);
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-foto{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+
+.info-titulo{
+  font-size: 1.2em;
+ font-weight: bold;
+  margin-bottom: 10px
+}
+
+.info-Among{
+  max-width: 968px;
+  margin: 0 auto;
+  padding: 28px;
+ text-align: center;
+}
+
+.conteineir-pagina2{
+ text-align: center;
+ color: var(--branco);
+ background-size: cover;
+ background: linear-gradient(rgba(17, 17, 17, 0.8), rgba(20, 20, 20, 1)), url(imagens-geime/fundo\ among\ pagina\ 2.jpg);
+ text-wrap: balance;
+ 
+}
+
+img[alt=Among2],image[alt=tripulante],img[alt=comuniçao],img[alt=tarefa],img[alt=tripulante],img[alt=vigia]{
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.dicas-Among{
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 2em;
+  background-color: transparent;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.titulo-Among,.titulo1-pagina2{
+  color: var(--vermelho);
+}
+
+.descricao-Among{
+  line-height: 1.6;
+ margin-bottom: 1em;
+}
+
+.titulo2-pagina2,.titulo-Among2{
+  color: var(--verde);
+}
+
+.conteiner-SubwaySurfers{
+  text-align: center;
+  background: linear-gradient(rgba(17, 17, 17, 0.8), rgba(20, 20, 20, 1)), url(imagens-geime/fundo\ pagina3.jpg);
+  
+}
+
+.dicas-Subway{
+  text-align: center;
+  margin: 50px auto;
+  max-width: 800px;
+  padding: 20px;
+  background-image: url(imagens-geime/fundo\ pagina3.jpg);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-wrap: balance;
+}
+
+img[alt=Subway]{
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.Surfers-3{
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border: solid var(--branco);
+}
+
+.descricao-Subway{
+  line-height: 1.6;
+  color: var(--preto)
+}
+
+.titulo1-pagina3{
+  background: linear-gradient(72deg, #60688c 1%, #0cb3f0 50%, #FFFF00 99%);
+  background-clip: text;
+  color: transparent;
+}
+
+.titulo-Surfers{
+  color: var(--amarelo);
+  background-color: #000000;
+}
+ 
+.GTA-conteiner{
+  text-align: center;
+  background: linear-gradient(rgba(17, 17, 17, 0.8), rgba(20, 20, 20, 1)), url(imagens-geime/fundo\ pagina4\ parte\ 2.jpg);
+  background-size: 99%;
+ background-repeat: repeat;
+ 
+}
+
+.GTA-dicas{
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  background-image: url(imagens-geime/fundo\ pagina4.jpg);
+}
+
+img[alt=GT4]{
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.descricao-GTA{
+  text-align: center;
+  color: var(--preto);
+}
+
+.titulo-GTA{
+  text-align: center;
+  margin-bottom: 20px;
+  color: #8f3c28;
+  
+}
+
+.gete-A{
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border: solid  var(--azul);
+}
+
+.lista-GTA{
+  color: #000;
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 2em;
+  background-color: #ffa412;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: var(--branco);
+  
+}
+
+.info-GTA{
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-image: url(imagens-geime/fundo\ pagina4.jpg);
+}
+
+.titulo1-pagina4{
+  color: #00e0ff;
+}
+
+.FIFA-conteiner{
+  text-align: center;
+  background-image: url(imagens-geime/fundo\ pagina5.jpg);
+  background-size: 99%;
+ background-repeat: repeat;
+}
+
+.info-fifa{
+  width: 80%;
+  margin: 50px auto;
+  background-color: transparent;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-image: url(imagens-geime/fundo\ pagina5-2.jpg);
+}
+
+img[alt= FIFA5]{
+  display: block;
+  margin: 30px auto;
+  max-width: 500px;
+}
+
+.fifa-ps5{
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border: solid var(--verde);
+}
+
+.descricao-FIFA{
+  line-height: 1.6;
+  color: var(--preto);
+}
+.titulo-fifa{
+ background-color: #00ff0a;
+}
+
+.titulo1-pagina5{
+  background: linear-gradient(72deg,#a6ff9a 30%,#1cff00 70%);
+  background-clip: text;
+  color: transparent;
+}
+
+
+
+
+  
+
+
+
